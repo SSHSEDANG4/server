@@ -9,9 +9,17 @@
 src="https://img.shields.io/badge/Service-V2rayXray-success.svg">  <img src= "https://img.shields.io/badge/Service-SSR-success.svg">  <img src="https://img.shields.io/badge/Service-Trojan-success.svg">  <img src="https://img.shields.io/badge/Service-WireGuard-success.svg">
 
 ## Commands : <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=powershell&label=Shell&message=Bash%20Script&color=lightgray">
+## <img src="https://img.shields.io/badge/Service-Choose-yellowgreen">  
+## Installation 1 :
 
+  ```html
+apt update && apt upgrade -y && update-grub && sleep 2 && reboot
+  ```
+  ```html
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://raw.githubusercontent.com/syapik96/server/main/setup.sh chmod +x setup.sh && ./setup.sh
 
-## Installation :
+  ```
+## Installation 2 :
 
   ```html
 apt update && apt upgrade -y --fix-missing && update-grub && sleep 2 && reboot
@@ -20,7 +28,6 @@ apt update && apt upgrade -y --fix-missing && update-grub && sleep 2 && reboot
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt --reinstall --fix-missing install -y bzip2 gzip coreutils wget screen nscd && wget --inet4-only -O setup.sh 'https://raw.githubusercontent.com/syapik96/server/main/setup.sh' && chmod +x setup.sh && ./setup.sh && rm -rf ./setup.sh
 
   ```
-   
 ## Description :
 
 ### Port :
@@ -44,10 +51,6 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 * IPv6     :       [off]
   
   
- ## Disclaim 
-  
-This script is not my property . This script is still under modification, fix minor issues . Make sure u know what to do and use at your own risk .
-  
 ## Credit :
   
-*   Horas
+*   Horas Marolop Amsal Siregar
