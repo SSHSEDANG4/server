@@ -122,7 +122,7 @@ if [[ ${OS} == "centos" ]]; then
 }
 Start_SSR(){
 	check_pid
-	wget -O /etc/init.d/ssrmu "https://raw.githubusercontent.com/syapik96/server/main/ssrmu"
+	wget -O /etc/init.d/ssrmu "https://raw.githubusercontent.com/hybtoy/ssrrmu/master/ssrrmu.sh"
 	/etc/init.d/ssrmu start
 }
 Install_SSR(){
@@ -138,7 +138,7 @@ Save_iptables
 Start_SSR
 }
 Install_SSR
-wget -O /usr/bin/ssr https://raw.githubusercontent.com/syapik96/server/main/ssrmu.sh && chmod +x /usr/bin/ssr
+wget -O /usr/bin/ssr https://raw.githubusercontent.com/hybtoy/ssrrmu/master/ssrrmu.sh && chmod +x /usr/bin/ssr
 wget -O /usr/bin/add-ssr https://raw.githubusercontent.com/syapik96/server/main/add-ssr.sh && chmod +x /usr/bin/add-ssr
 wget -O /usr/bin/del-ssr https://raw.githubusercontent.com/syapik96/server/main/del-ssr.sh && chmod +x /usr/bin/del-ssr
 wget -O /usr/bin/renew-ssr https://raw.githubusercontent.com/syapik96/server/main/renew-ssr.sh && chmod +x /usr/bin/renew-ssr
